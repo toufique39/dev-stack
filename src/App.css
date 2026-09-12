@@ -1,3 +1,15 @@
+.gradient-test {
+  background: var(--brand-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+
+
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
