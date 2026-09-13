@@ -1,75 +1,92 @@
-# React + TypeScript + Vite
+                                                      Dev Stack Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dev Stack Builder is a modern and responsive React + TypeScript web application that helps developers explore popular web development technologies and build their own custom technology stack.
 
-Currently, two official plugins are available:
+Users can browse different technologies, check their category, difficulty level, rating, and description, and add their favorite technologies to a personal stack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌐 Live Website
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **Live Site:** [Add your live site link here]
 
-## Expanding the ESLint configuration
+## 📦 GitHub Repository
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔗 **GitHub:** [Add your GitHub repository link here]
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. 🧩 Explore Technologies
 
-```
+Browse a collection of modern development technologies with useful information such as:
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+- Technology name
+- Category
+- Description
+- Difficulty level
+- Rating
+- Badge
+- Technology icon
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 2. 🛠️ Build Your Own Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Add technologies to your personal stack and see the selected technologies in the **Your Stack** sidebar.
 
-```
+- Add technologies
+- Prevent duplicate selections
+- Remove individual technologies
+- Remove all selected technologies
+- View the total selected technology count
+
+### 3. 🔔 Interactive Notifications
+
+The application uses **React Toastify** to provide user-friendly notifications for actions such as:
+
+- Adding a technology
+- Trying to add a duplicate technology
+- Removing a technology
+- Removing all technologies
+
+---
+
+## 🛠️ Technologies Used
+
+- **React.js**
+- **TypeScript**
+- **Vite**
+- **CSS3**
+- **React Toastify**
+- **JSON**
+- **JavaScript ES6+**
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+│
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── TechnologySection.tsx
+│   ├── TechnologyCard.tsx
+│   ├── Stack.tsx
+│   └── Footer.tsx
+│
+├── css/
+│   ├── navbar.css
+│   ├── hero.css
+│   ├── technology-section.css
+│   ├── technology-card.css
+│   └── footer.css
+│
+├── types/
+│   └── technology.ts
+│
+├── App.tsx
+├── App.css
+├── index.css
+└── main.tsx
