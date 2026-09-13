@@ -1,92 +1,66 @@
-                                                      Dev Stack Builder
+# 🚀 Dev Stack Builder
 
-Dev Stack Builder is a modern and responsive React + TypeScript web application that helps developers explore popular web development technologies and build their own custom technology stack.
+## 📌 About The Project
 
-Users can browse different technologies, check their category, difficulty level, rating, and description, and add their favorite technologies to a personal stack.
+Dev Stack Builder is a responsive web application built with React and TypeScript.
 
----
-
-## 🌐 Live Website
-
-🔗 **Live Site:** [Add your live site link here]
-
-## 📦 GitHub Repository
-
-🔗 **GitHub:** [Add your GitHub repository link here]
-
----
-
-## ✨ Features
-
-### 1. 🧩 Explore Technologies
-
-Browse a collection of modern development technologies with useful information such as:
-
-- Technology name
-- Category
-- Description
-- Difficulty level
-- Rating
-- Badge
-- Technology icon
-
-### 2. 🛠️ Build Your Own Stack
-
-Add technologies to your personal stack and see the selected technologies in the **Your Stack** sidebar.
-
-- Add technologies
-- Prevent duplicate selections
-- Remove individual technologies
-- Remove all selected technologies
-- View the total selected technology count
-
-### 3. 🔔 Interactive Notifications
-
-The application uses **React Toastify** to provide user-friendly notifications for actions such as:
-
-- Adding a technology
-- Trying to add a duplicate technology
-- Removing a technology
-- Removing all technologies
+It allows developers to explore different technologies and create their own development stack by adding and removing technologies from a personal stack.
 
 ---
 
 ## 🛠️ Technologies Used
 
-- **React.js**
-- **TypeScript**
-- **Vite**
-- **CSS3**
-- **React Toastify**
-- **JSON**
-- **JavaScript ES6+**
+- React.js
+- TypeScript
+- Vite
+- CSS3
+- React Toastify
+- JSON
 
 ---
 
-## 📂 Project Structure
+## ✨ Features
 
-```text
-src/
-│
-├── components/
-│   ├── Navbar.tsx
-│   ├── Hero.tsx
-│   ├── TechnologySection.tsx
-│   ├── TechnologyCard.tsx
-│   ├── Stack.tsx
-│   └── Footer.tsx
-│
-├── css/
-│   ├── navbar.css
-│   ├── hero.css
-│   ├── technology-section.css
-│   ├── technology-card.css
-│   └── footer.css
-│
-├── types/
-│   └── technology.ts
-│
-├── App.tsx
-├── App.css
-├── index.css
-└── main.tsx
+### 1. 🔍 Explore Technologies
+Users can explore different technologies with their name, category, description, difficulty level, rating, badge, and icon.
+
+### 2. 🧰 Build Your Own Stack
+Users can add their favorite technologies to the **Your Stack** section, remove individual items, or remove all selected technologies at once.
+
+### 3. 🔔 Interactive Notifications
+The project uses React Toastify to show notifications when technologies are added, removed, duplicated, or when the entire stack is cleared.
+
+---
+
+# 📚 React Questions & Answers
+
+## 1. What is JSX, and why is it used in React?
+
+JSX is a syntax that lets us write HTML-like code inside JavaScript or TypeScript.
+
+It makes React code easier to read and helps us create UI components.
+
+---
+
+## 2. What is the difference between props and state?
+
+**Props** are used to pass data from a parent component to a child component.
+
+**State** is data managed inside a component that can change over time.
+
+---
+
+## 3. What does the `useState` hook do, and where did you use it in this project?
+
+`useState` is used to store and update data in a React component.
+
+In this project, I used it for:
+
+- Technology data
+- Loading state
+- Selected technologies in the stack
+
+Example:
+
+```tsx
+const [stack, setStack] = useState<Technology[]>([]);
