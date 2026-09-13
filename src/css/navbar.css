@@ -1,0 +1,128 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  min-height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.brand-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+
+  display: grid;
+  place-items: center;
+
+  background: var(--brand-gradient);
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.brand-text {
+  background: var(--brand-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #7c3aed;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sign-in-btn,
+.sign-up-btn {
+  border: none;
+  padding: 11px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.sign-in-btn {
+  background: transparent;
+  color: #334155;
+}
+
+.sign-up-btn {
+  background: var(--brand-gradient);
+  color: white;
+}
+
+
+.menu-btn {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  padding: 4px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .navbar-container {
+    min-height: 68px;
+  }
+
+  .brand-text {
+    font-size: 17px;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+  }
+
+  .sign-in-btn,
+  .sign-up-btn {
+    padding: 9px 13px;
+    font-size: 12px;
+  }
+}

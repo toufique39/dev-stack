@@ -1,0 +1,137 @@
+.hero {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+.hero-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 60px;
+}
+
+.hero-label {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 7px 13px;
+
+  border: 1px solid #e9d5ff;
+  border-radius: 999px;
+
+  color: #7c3aed;
+  background: #faf5ff;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hero-title {
+  max-width: 650px;
+  margin-bottom: 22px;
+
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.gradient-text {
+  background: var(--brand-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin-bottom: 30px;
+
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-primary-btn,
+.hero-secondary-btn {
+  padding: 13px 22px;
+  border-radius: 999px;
+
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.hero-primary-btn {
+  border: none;
+  background: var(--brand-gradient);
+  color: white;
+}
+
+.hero-primary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-secondary-btn {
+  border: 1px solid #cbd5e1;
+  background: white;
+  color: #334155;
+}
+
+.hero-secondary-btn:hover {
+  border-color: #7c3aed;
+  color: #7c3aed;
+}
+
+.hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  width: min(100%, 480px);
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: clamp(38px, 10vw, 54px);
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-image {
+    width: min(100%, 380px);
+  }
+}
