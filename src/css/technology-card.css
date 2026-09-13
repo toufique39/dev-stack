@@ -1,0 +1,95 @@
+.technology-card {
+  padding: 22px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.technology-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.technology-icon {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.technology-badge {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #fff7ed;
+  color: #ea580c;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.technology-card h3 {
+  margin-bottom: 9px;
+  font-size: 17px;
+}
+
+.technology-card > p {
+  min-height: 68px;
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.card-meta {
+  display: flex;
+  flex-direction:row ;
+  justify-content: space-between;
+  gap: 2px;
+  margin: 18px 0;
+}
+
+.card-meta span {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.card-bottom {
+ align-items: center;
+}
+
+.rating {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.card-bottom button {
+  padding: 9px 13px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: var(--brand-gradient);
+  color: white;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.card-bottom button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}

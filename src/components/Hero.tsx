@@ -6,7 +6,6 @@ function Hero() {
       <div className="hero-container">
 
         <div className="hero-content">
-          <p className="hero-label">Build Your Developer Stack</p>
 
           <h1 className="hero-title">
             Build Your
@@ -31,7 +30,7 @@ function Hero() {
 
       <div className="hero-image-wrapper">
           <img
-            src="../asserts/hero.png"
+            src="/src/asserts/Hero Isometric 3D Graphic Column.png"
             alt="Developer working with technology"
             className="hero-image"
           />

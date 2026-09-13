@@ -5,10 +5,18 @@ import "../css/technology-section.css";
 
 interface TechnologySectionProps {
   technologies: Technology[];
+  stack: Technology[];
+  onAddToStack: (technology: Technology) => void;
+  onRemoveFromStack: (id: string) => void;
+  onRemoveAll: () => void;
 }
 
 function TechnologySection({
   technologies,
+  stack,
+  onAddToStack,
+  onRemoveFromStack,
+  onRemoveAll
 }: TechnologySectionProps) {
   return (
     <section className="technology-section" id="technologies">
@@ -30,16 +38,23 @@ function TechnologySection({
           </div>
 
           <div className="technology-grid">
-            {technologies.map((technology) => (
-              <TechnologyCard
-                key={technology.id}
-                technology={technology}
-              />
-            ))}
+           
+          {technologies.map((technology) => (
+  <TechnologyCard
+    key={technology.id}
+    technology={technology}
+    onAddToStack={onAddToStack}
+    onRemoveFromStack={onRemoveFromStack}
+
+    isAdded={stack.some(
+      (item) => item.id === technology.id
+    )}
+  />
+))}
           </div>
         </div>
 
-        <Stack />
+        <Stack stack={stack} onRemoveFromStack={onRemoveFromStack} onRemoveAll={onRemoveAll} />
 
       </div>
     </section>
