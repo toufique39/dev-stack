@@ -9,7 +9,7 @@ function Navbar() {
 
         <a href="#" className="brand">
           <span className="brand-icon">DS</span>
-          <span className="brand-text">Dev Stack</span>
+          <span className="brand-text"> <span className="custom">Dev</span> Stack</span>
         </a>
 
         <nav className="nav-links">
@@ -20,7 +20,7 @@ function Navbar() {
           <a href="#contact">Contact</a>
         </nav>
 
-        {/* Actions */}
+     
         <div className="nav-actions">
           <button className="sign-in-btn">Sign In</button>
           <button className="sign-up-btn">Sign Up</button>
@@ -28,7 +28,7 @@ function Navbar() {
 
 
         <button className="menu-btn" aria-label="Open menu">
-          ☰
+            <img src="/src/ui/hamburger.png" alt="Menu" />
         </button>
 
       </div>

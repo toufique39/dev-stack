@@ -79,7 +79,7 @@ const handleRemoveAll = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div><center><h1>Loading...</h1></center></div>;
   }
 
   return (
